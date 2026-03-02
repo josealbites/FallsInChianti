@@ -1,18 +1,21 @@
-# FallsInChianti
-Official code repository for the manuscript: "Real-world mobility predicts falls in older adults." 
+# Real-world mobility predicts falls in older adults
 
+Official code repository for the manuscript: **"Real-world mobility predicts falls in older adults"**. This project provides a framework for predicting fall risk using inertial sensor data and machine learning.
+
+## 📂 Project Structure
+
+```text
 Holistic-fall-prediction/
 │
-├── README.md               # Descripción general e instrucciones
-├── requirements.txt        # Dependencias necesarias para ejecutar el código
+├── README.md               # Project documentation
+├── requirements.txt        # Python dependencies
 │
 ├── data/
-│   └── sample_dummy_data.csv  # Datos sintéticos para demostración y pruebas
+│   └── sample_dummy_data.csv  # Synthetic data for code verification
 │
 └── src/
-    ├── utils.py            # Transformadores personalizados y divisores de validación cruzada (CV)
-    ├── 01_wfg_algorithm.py  # Lógica del algoritmo Walking Feature Generation (WFG)
-    ├── 02_univariate_analysis.py # Modelos GEE y generación de Forest plots
-    ├── 03_ml_pipeline.py    # Pipeline completo de entrenamiento y evaluación de ML
-    └── 04_explainability.py # Visualizaciones de SHAP y UMAP para interpretación
-
+    ├── utils.py            # Custom transformers and CV splitters
+    ├── 01_wfg_algorithm.py  # Walking Feature Generation (WFG) logic
+    ├── 02_univariate_analysis.py # GEE models and Forest plots
+    ├── 03_ml_pipeline.py    # End-to-end Machine Learning pipeline
+    └── 04_explainability.py # SHAP and UMAP visualizations
